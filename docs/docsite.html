@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/docsite.css" />
+  <link rel="stylesheet" href="/css/components.css">
+  <title>Rabi UI</title>
+</head>
+
+<body>
+  <div class="grid-row">
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="nav-brand">
+          <h1>
+            <a class="brand-logo" href=""><span class="nav-highlight">Rabi</span> UI</a>
+          </h1>
+          </a>
+        </div>
+        <div class="version">
+          <p>v0.1</p>
+        </div>
+        <div id="nav-pills">
+          <ul class="nav-links">
+            <li class="link">
+              <a href="">Home</a>
+            </li>
+            <li class="link">
+              <a href="">Docs</a>
+            </li>
+            <li class="link">
+              <a href="#getting-started">Getting Started</a>
+            </li>
+            <li class="link">
+              <a href="#avatars">Avatar</a>
+            </li>
+            <li class="link">
+              <a href="#alerts">Alerts</a>
+            </li>
+            <li class="link">
+              <a href="#batches">Batches</a>
+            </li>
+            <li class="link">
+              <a href="#buttons">Buttons</a>
+            </li>
+            <li class="link">
+              <a href="#cards">Cards</a>
+            </li>
+            <li class="link">
+              <a href="#images">Images</a>
+            </li>
+            <li class="link">
+              <a href="#inputs">Inputs</a>
+            </li>
+            <li class="link">
+              <a href="#lists">Lists</a>
+            </li>
+            <li class="link">
+              <a href="#navigation">Navigation</a>
+            </li>
+            <li class="link">
+              <a href="#modal">Modal</a>
+            </li>
+            <li class="link">
+              <a href="#rating">Rating</a>
+            </li>
+            <li class="link">
+              <a href="#slider">Slider</a>
+            </li>
+            <li class="link">
+              <a href="#simplified-grid">Simplified Grid</a>
+            </li>
+            <li class="link">
+              <a href="#text-utilities">Text utilities</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <button id="nav-toggle"><i class="bi bi-list"></i></button>
+      </div>
+
+      <!-- <div class="search">
+          <form class="search-form" action="">
+            <input class="search-box" type="text">
+            <button class="search-button"><i class="bi bi-search"></i></button>
+          </form>
+        </div> -->
+    </nav>
+
+    <div class="search">
+      <form id="search-form" action="">
+        <input class="search-box" type="text" placeholder="Search docs ...">
+        <button class="search-button"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+
+    <!-- <aside class="sidebar">
+      <nav class="nav-side">
+        <ul class="sidenav-pills">
+          <li class="link">
+            <a href="#getting-started">Getting Started</a>
+          </li>
+          <li class="link">
+            <a href="#avatar">Avatar</a>
+          </li>
+          <li class="link">
+            <a href="#batches">Batch</a>
+          </li>
+          <li class="link">
+            <a href="#buttons">Button</a>
+          </li>
+          <li class="link">
+            <a href="#cards">Card</a>
+          </li>
+          <li class="link">
+            <a href="">Input</a>
+          </li>
+        </ul>
+      </nav>
+    </aside> -->
+
+
+    <div class="documentation">
+      <section id="getting-started" class="section">
+        <div class="getting-started">
+          <h1 class="section-heading">Introduction</h1>
+          <p class="section-para">
+            Get started with RabiCSS themed on Tagore.
+          </p>
+        </div>
+        <div class="quick-start">
+          <h2>Quick Start</h2>
+          <p>Looking to quickly add RabiCSS to your project?</p>
+
+          <h2>CSS</h2>
+          <p>Copy-paste the stylesheet &lt;<span style="color: var(--rb-red);">link</span>&gt; into your &lt;<span
+              style="color: var(--rb-red);">head</span>&gt; before all other stylesheets to load my CSS.
+          </p>
+          <div class="css-bash">
+            <iframe src="https://carbon.now.sh/embed/aMgWIJUvP7fbZkrhjiZ8" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+
+          <h2>JS</h2>
+          <p>Many of my components require the use of JavaScript to function. Place the following &lt;<span
+              style="color: var(--rb-red);">script</span>&gt;
+            near the end of your pages, right before the closing &lt;/<span
+              style="color: var(--rb-red);">body</span>&gt;
+            tag, to enable them.
+          </p>
+          <div class="js-bash">
+            <iframe src="https://carbon.now.sh/embed/Ma6sRx2XRsdXdBsnhHza" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+
+          <h2>Starter template</h2>
+          <p>Be sure to have your pages set up with the latest design and development standards. That means using an
+            HTML5
+            doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your
+            pages
+            should look like this:</p>
+          <div class="starter-template-bash">
+            <iframe src="https://carbon.now.sh/embed/HmAn5NoU2fri75zyLBW3" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+      </section>
+
+      <section id="avatars" class="section">
+        <h2>Avatar</h2>
+        <p>Avatar component comes in 5 sizes</p>
+        <div class="avatar-container">
+          <div class="extra-small">
+            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          </div>
+          <div class="small">
+            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          </div>
+          <div class="medium">
+            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          </div>
+          <div class="large">
+            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          </div>
+          <div class="extra-large">
+            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          </div>
+        </div>
+        <div class="avatar-bash">
+          <iframe src="https://carbon.now.sh/embed/I8ibeohe7rjsBjrNC0Cv"
+            style="width: 679px; height: 344px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="alerts" class="section">
+        <h2>Alerts</h2>
+        <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one
+          of the four required contextual classes (e.g., .success-alert)</p>
+        <div class="alert-container">
+          <div id="alert" class="alert primary-alert">
+            <p>This is a primary alert.</p>
+            <div id="close" class="button-close">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div id="alert" class="alert secondary-alert">
+            <p>This is a secondary alert.</p>
+            <div id="close" class="button-close">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div id="alert" class="alert success-alert">
+            <p>This is a success alert.</p>
+            <div id="close" class="button-close">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div id="alert" class="alert warning-alert">
+            <p>This is a warning alert.</p>
+            <div id="close" class="button-close">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert-bash">
+          <iframe src="https://carbon.now.sh/embed/HaOlydtokQWedQ7BEymB" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="badges" class="section">
+        <h2>Badges</h2>
+        <p>Use our background utility classes to quickly change the appearance of a badge.</p>
+        <div class="badge-container">
+          <span class="badge primary-badge">Primary</span>
+          <span class="badge secondary-badge">Secondary</span>
+          <span class="badge success-badge">Success</span>
+          <span class="badge warning-badge">Warning</span>
+        </div>
+        <div class="badge-bash">
+          <iframe src="https://carbon.now.sh/embed/iXN1yUwqjhFs1aOid1GW" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <h3>Badge on Icons</h3>
+        <div class="badge-icon-container">
+          <div class="badge-icon">
+            <i class="bi bi-cart3"></i>
+            <span class="badge-i">5</span>
+          </div>
+          <div class="badge-icon">
+            <i class="bi bi-bell-fill"></i>
+            <span class="badge-i">3</span>
+          </div>
+        </div>
+        <div class="badge-icon-bash">
+          <iframe src="https://carbon.now.sh/embed/ibfEyLwdT1aYuWVtPiej" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <h3>Badge on Avatars</h3>
+        <div class="badge-avatar-container">
+          <div class="avatar-container">
+            <div class="extra-small">
+              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator indicator-xs"></span>
+            </div>
+            <div class="small">
+              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator indicator-s"></span>
+            </div>
+            <div class="medium">
+              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator indicator-m"></span>
+            </div>
+            <div class="large">
+              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator indicator-l"></span>
+            </div>
+            <div class="extra-large">
+              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator indicator-xl"></span>
+            </div>
+          </div>
+        </div>
+        <div class="badge-avatar-bash">
+          <iframe src="https://carbon.now.sh/embed/r3z1rVqcdPx2HXOYH9f8" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="buttons" class="section">
+        <h2>Buttons</h2>
+        <div class="btn-container">
+          <button class="primary-btn">Primary</button>
+          <button class="secondary-btn">Secondary</button>
+          <div class="link-btn">
+            <a href="">Link Button</a>
+          </div>
+          <button class="icon-btn"><i class="bi bi-house-fill"></i><span style="padding: 0 .5rem">Home</span>
+        </div>
+        <button id="float-btn" class="float-btn"><i class="bi bi-arrow-up"></i></button>
+        <div class="button-bash">
+          <iframe src="https://carbon.now.sh/embed/XD4IOS4himyrCBlp3wkX" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="cards" class="section">
+        <h2>Cards</h2>
+        <h3>Cards with badges</h3>
+        <div class="card">
+          <img src="/images/tagore.jpg" alt="image" />
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              dolores asperiores enim aspernatur voluptate minima odit ratione
+              officia ipsum, non maxime nihil beatae deleniti commodi officiis
+              error, odio quis eveniet?
+            </p>
+          </div>
+          <span class="badge primary-badge card-badge">Legendary</span>
+        </div>
+        <div class="card-badge-bash">
+          <iframe src="https://carbon.now.sh/embed/Ra9frtDQ54M6gZS9RH7w" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <h3>Cards with dismiss</h3>
+        <div id="card" class="card">
+          <img src="/images/tagore.jpg" alt="image" />
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              dolores asperiores enim aspernatur voluptate minima odit ratione
+              officia ipsum, non maxime nihil beatae deleniti commodi officiis
+              error, odio quis eveniet?
+            </p>
+          </div>
+          <span class="badge primary-badge card-badge">Legendary</span>
+          <div id="dismiss-btn" class="dismiss-btn">
+            <i class="bi bi-x"></i>
+          </div>
+        </div>
+        <div class="card-dismiss-bash">
+          <iframe src="https://carbon.now.sh/embed/dgJVxByTOUJS2t5rc4zn" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <h3>Cards with overlay</h3>
+        <div class="card">
+          <img src="/images/tagore.jpg" alt="images" />
+          <div class="overlay">
+            <div>Died on 7th August, 1941</div>
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              dolores asperiores enim aspernatur voluptate minima odit ratione
+              officia ipsum, non maxime nihil beatae deleniti commodi officiis
+              error, odio quis eveniet?
+            </p>
+          </div>
+          <span class="badge primary-badge card-badge">Legendary</span>
+        </div>
+        <div class="card-overlay-bash">
+          <iframe src="https://carbon.now.sh/embed/j6V5pVT12qKliPLjIxvT" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <h3>Text only card</h3>
+
+        <div class="card">
+          <header class="header">
+            <h1>Card title</h1>
+            <p>Card subtitle</p>
+          </header>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              dolores asperiores enim aspernatur voluptate minima odit ratione
+              officia ipsum, non maxime nihil beatae deleniti commodi officiis
+              error, odio quis eveniet?
+            </p>
+          </div>
+          <div id="dismiss-btn" class="dismiss-btn">
+            <i class="bi bi-x"></i>
+          </div>
+        </div>
+        <div class="card-text-bash">
+          <iframe src="https://carbon.now.sh/embed/ooOaDMHvuGEqmGCcbrYH" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <h3>Horizontal card</h3>
+        <div class="card horizontal">
+          <div class="card-img-container">
+            <img src="/images/tagore.jpg" alt="" />
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              dolores asperiores enim aspernatur voluptate minima odit ratione
+              officia ipsum, non maxime nihil beatae deleniti commodi officiis
+              error, odio quis eveniet?
+            </p>
+          </div>
+        </div>
+        <h3>Cards with shadow</h3>
+
+        <div class="card shadow">
+          <img class="card-image" src="/images/tagore.jpg" alt="" />
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              dolores asperiores enim aspernatur voluptate minima odit ratione
+              officia ipsum, non maxime nihil beatae deleniti commodi officiis
+              error, odio quis eveniet?
+            </p>
+          </div>
+        </div>
+        <div class="card-shadow-bash">
+          <iframe src="https://carbon.now.sh/embed/yFkyKA9hDBl954oIbGsO" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="images" class="section">
+        <h2>Images</h2>
+        <h3>Responsive images</h3>
+        <div>
+          <img class="image" src="/images/tagore.jpg" alt="" />
+        </div>
+        <div class="image-responsive-bash">
+          <iframe src="https://carbon.now.sh/embed/Cu3SYVqSkoURPLt7f1KJ" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <h3>Round images</h3>
+        <div>
+          <img class="image image-round" src="/images/tagore.jpg" alt="" />
+        </div>
+        <div class="image-round-bash">
+          <iframe src="https://carbon.now.sh/embed/3Ljn9Ohp4yMmUFKy5Nsd" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="inputs" class="section">
+        <h2>Inputs</h2>
+        <div class="input">
+        <textarea class="textbox" ></textarea>
+        <label class="placeholder">Comments</label>
+      </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer">
+    <ul class="footer-pills">
+      <li class="link">
+        <a href="">GitHub</a>
+      </li>
+      <li class="link">
+        <a href="">Twitter</a>
+      </li>
+    </ul>
+    <div class="footer-text">
+      <p>Made with love by Tuhin</p>
+      <p>Currently version 0.1</p>
+    </div>
+  </div>
+  <script src="/js/rabiui.js"></script>
+</body>
+
+
+</html>

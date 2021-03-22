@@ -1,0 +1,30 @@
+.avatar-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.extra-small {
+  position: relative;
+  width: 10%;
+}
+
+.small {
+  position: relative;
+  width: 15%;
+}
+
+.medium {
+  position: relative;
+  width: 20%;
+}
+
+.large {
+  position: relative;
+  width: 25%;
+}
+
+.extra-large {
+  position: relative;
+  width: 30%;
+}

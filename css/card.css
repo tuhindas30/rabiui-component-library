@@ -1,0 +1,78 @@
+:root {
+  --rb-primary: #d97706;
+  --rb-very-light-grey: #f9fafb;
+  --rb-light-grey: #f3f4f6;
+  --rb-shadow: rgb(17, 24, 39, 0.5);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--rb-light-grey);
+  border: 1px solid var(--rb-primary);
+  border-radius: 5px;
+}
+
+.card img,
+.card-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-badge {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+
+.dismiss-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  font-size: 2rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
+
+.dismiss-btn i {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  color: var(--rb-very-light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  font-size: 1.2rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.header p {
+  font-weight: 600;
+}
+
+.shadow {
+  box-shadow: 3px 2px 20px var(--rb-shadow);
+}
