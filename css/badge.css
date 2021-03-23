@@ -14,21 +14,21 @@
   color: var(--rb-very-light-grey);
 }
 
-.primary-badge {
+.badge.primary {
   background-color: var(--rb-primary);
 }
 
-.secondary-badge {
+.badge.secondary {
   background-color: var(--rb-dark-grey);
   color: var(--rb-very-light-grey);
 }
 
-.success-badge {
+.badge.success {
   background-color: var(--rb-green);
   color: var(--rb-very-light-grey);
 }
 
-.warning-badge {
+.badge.warning {
   background-color: var(--rb-yellow);
   color: var(--rb-light-black);
 }
@@ -49,59 +49,73 @@
   border-radius: 50%;
 }
 
-.badge-icon i {
-  width: 200px;
-  height: auto;
-}
-
-.badge-avatar {
-  position: absolute;
-  bottom: 0.3rem;
-  right: -0.1rem;
-  padding: 5px 10px;
-  font-size: 0.8rem;
-  width: fit-content;
-  color: var(--badge-text);
-  background-color: var(--badge-red);
-  border-radius: 50%;
-}
-
 .indicator {
   position: absolute;
-
   z-index: 2;
   border-radius: 50%;
   background-color: var(--rb-green);
-  /* border: 1px solid black; */
 }
 
-.indicator-xs {
-  top: 1.4rem;
-  right: 0.1rem;
+.ind-xs {
+  bottom: 0.5rem;
+  right: 0;
   width: 5px;
   height: 5px;
 }
-.indicator-s {
-  top: 2rem;
-  right: 0;
+.ind-s {
+  bottom: 0.5rem;
+  right: 0.1rem;
   width: 10px;
   height: 10px;
 }
-.indicator-m {
-  top: 2.8rem;
+.ind-m {
+  bottom: 0.5rem;
   right: 0.2rem;
   width: 12px;
   height: 12px;
 }
-.indicator-l {
-  bottom: 1.5rem;
+.ind-l {
+  bottom: 0.5rem;
   right: 0.2rem;
   width: 15px;
   height: 15px;
 }
-.indicator-xl {
+.ind-xl {
   bottom: 0.5rem;
   right: 0.2rem;
   width: 20px;
   height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ind-xs {
+    bottom: 0.5rem;
+    right: 0.8rem;
+    width: 10px;
+    height: 10px;
+  }
+  .ind-s {
+    bottom: 0.8rem;
+    right: 1.3rem;
+    width: 12px;
+    height: 12px;
+  }
+  .ind-m {
+    bottom: 0.9rem;
+    right: 1.8rem;
+    width: 15px;
+    height: 15px;
+  }
+  .ind-l {
+    bottom: 0.9rem;
+    right: 2.5rem;
+    width: 20px;
+    height: 20px;
+  }
+  .ind-xl {
+    bottom: 1.2rem;
+    right: 2.5rem;
+    width: 25px;
+    height: 25px;
+  }
 }

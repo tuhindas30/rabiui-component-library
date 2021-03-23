@@ -2,13 +2,13 @@
 
 const navToggle = document.getElementById("nav-toggle");
 
-const navPills = document.getElementById("nav-pills");
+const navPillsMobile = document.getElementById("nav-pills-mobile");
 
 navToggle.addEventListener("click", () => {
-  if (navPills.style.display === "block") {
-    navPills.style.display = "none";
+  if (navPillsMobile.style.display === "block") {
+    navPillsMobile.style.display = "none";
   } else {
-    navPills.style.display = "block";
+    navPillsMobile.style.display = "block";
   }
 });
 
@@ -61,3 +61,99 @@ const card = document.getElementById("card");
 dismissBtn.addEventListener("click", () => {
   card.style.display = "none";
 });
+
+// Validation check
+
+const form = document.getElementById("form");
+const fname = document.getElementById("fname");
+const lname = document.getElementById("lname");
+const uname = document.getElementById("uname");
+const city = document.getElementById("city");
+const state = document.getElementById("state");
+const zipcode = document.getElementById("zipcode");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  checkInputs();
+});
+
+const checkInputs = () => {
+  // trim to remove the whitespaces
+  const firstNameValue = fname.value.trim();
+  const lastNameValue = lname.value.trim();
+  const userNameValue = uname.value.trim();
+  const cityValue = city.value.trim();
+  const stateValue = state.value.trim();
+  const zipCodeValue = zipcode.value.trim();
+
+  if (firstNameValue === "") {
+    fname.parentElement.className = "fname error";
+  } else {
+    fname.parentElement.className = "fname success";
+  }
+
+  if (lastNameValue === "") {
+    lname.parentElement.className = "lname error";
+  } else {
+    lname.parentElement.className = "lname success";
+  }
+
+  if (userNameValue === "") {
+    uname.parentElement.className = "uname error";
+  } else {
+    uname.parentElement.className = "uname success";
+  }
+
+  if (cityValue === "") {
+    city.parentElement.className = "city error";
+  } else {
+    city.parentElement.className = "city success";
+  }
+
+  if (stateValue === "") {
+    state.parentElement.className = "state error";
+  } else {
+    state.parentElement.className = "state success";
+  }
+
+  if (zipCodeValue === "") {
+    zipcode.parentElement.className = "zipcode error";
+  } else {
+    zipcode.parentElement.className = "zipcode success";
+  }
+};
+
+// Modal
+
+const modalContainer = document.getElementById("modal-container");
+
+const showModalBtn = document.getElementById("btn-show-modal");
+
+const modalOverlay = document.getElementById("overlay");
+
+const modalClose = document.getElementById("modal-close");
+
+const modalHide = document.getElementById("modal-hide");
+
+showModalBtn.addEventListener("click", () => {
+  modalContainer.style.display = "block";
+  modalOverlay.style.display = "block";
+});
+
+modalClose.addEventListener("click", () => {
+  modalContainer.style.display = "none";
+  modalOverlay.style.display = "none";
+});
+
+modalHide.addEventListener("click", () => {
+  modalContainer.style.display = "none";
+  modalOverlay.style.display = "none";
+});
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modalContainer.style.display = "none";
+    modalOverlay.style.display = "none";
+  }
+};

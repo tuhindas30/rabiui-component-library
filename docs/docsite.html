@@ -13,7 +13,7 @@
 
 <body>
   <div class="grid-row">
-    <nav class="navbar">
+    <nav class="navbar fix-top">
       <div class="nav-left">
         <div class="nav-brand">
           <h1>
@@ -21,11 +21,11 @@
           </h1>
           </a>
         </div>
-        <div class="version">
+        <div class="version-mobile">
           <p>v0.1</p>
         </div>
-        <div id="nav-pills">
-          <ul class="nav-links">
+        <div id="nav-pills-mobile">
+          <ul class="nav-links-mobile">
             <li class="link">
               <a href="">Home</a>
             </li>
@@ -79,21 +79,36 @@
             </li>
           </ul>
         </div>
+        <div id="nav-pills-desktop">
+          <ul class="nav-links-desktop">
+            <li class="link">
+              <a href="">Home</a>
+            </li>
+            <li class="link">
+              <a href="">Docs</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
 
       <div class="nav-right">
         <button id="nav-toggle"><i class="bi bi-list"></i></button>
-      </div>
 
-      <!-- <div class="search">
-          <form class="search-form" action="">
+        <div class="search-desktop">
+          <form id="search-form" action="">
             <input class="search-box" type="text">
             <button class="search-button"><i class="bi bi-search"></i></button>
           </form>
-        </div> -->
+        </div>
+
+        <div class="version-desktop">
+          <p>v0.1</p>
+        </div>
     </nav>
 
-    <div class="search">
+
+    <div class="search-mobile">
       <form id="search-form" action="">
         <input class="search-box" type="text" placeholder="Search docs ...">
         <button class="search-button"><i class="bi bi-search"></i></button>
@@ -101,30 +116,57 @@
     </div>
 
 
-    <!-- <aside class="sidebar">
+    <aside class="sidebar">
       <nav class="nav-side">
         <ul class="sidenav-pills">
           <li class="link">
             <a href="#getting-started">Getting Started</a>
           </li>
           <li class="link">
-            <a href="#avatar">Avatar</a>
+            <a href="#avatars">Avatar</a>
           </li>
           <li class="link">
-            <a href="#batches">Batch</a>
+            <a href="#alerts">Alerts</a>
           </li>
           <li class="link">
-            <a href="#buttons">Button</a>
+            <a href="#batches">Batches</a>
           </li>
           <li class="link">
-            <a href="#cards">Card</a>
+            <a href="#buttons">Buttons</a>
           </li>
           <li class="link">
-            <a href="">Input</a>
+            <a href="#cards">Cards</a>
+          </li>
+          <li class="link">
+            <a href="#images">Images</a>
+          </li>
+          <li class="link">
+            <a href="#inputs">Inputs</a>
+          </li>
+          <li class="link">
+            <a href="#lists">Lists</a>
+          </li>
+          <li class="link">
+            <a href="#navigation">Navigation</a>
+          </li>
+          <li class="link">
+            <a href="#modal">Modal</a>
+          </li>
+          <li class="link">
+            <a href="#rating">Rating</a>
+          </li>
+          <li class="link">
+            <a href="#slider">Slider</a>
+          </li>
+          <li class="link">
+            <a href="#simplified-grid">Simplified Grid</a>
+          </li>
+          <li class="link">
+            <a href="#text-utilities">Text utilities</a>
           </li>
         </ul>
       </nav>
-    </aside> -->
+    </aside>
 
 
     <div class="documentation">
@@ -176,26 +218,24 @@
         <h2>Avatar</h2>
         <p>Avatar component comes in 5 sizes</p>
         <div class="avatar-container">
-          <div class="extra-small">
-            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          <div class="xsm">
+            <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
           </div>
-          <div class="small">
-            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          <div class="sm">
+            <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
           </div>
-          <div class="medium">
-            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          <div class="md">
+            <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
           </div>
-          <div class="large">
-            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          <div class="lg">
+            <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
           </div>
-          <div class="extra-large">
-            <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
+          <div class="xlg">
+            <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
           </div>
         </div>
         <div class="avatar-bash">
-          <iframe src="https://carbon.now.sh/embed/I8ibeohe7rjsBjrNC0Cv"
-            style="width: 679px; height: 344px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
+          <iframe src="https://carbon.now.sh/embed/I8ibeohe7rjsBjrNC0Cv" sandbox="allow-scripts allow-same-origin">
           </iframe>
         </div>
       </section>
@@ -205,25 +245,25 @@
         <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one
           of the four required contextual classes (e.g., .success-alert)</p>
         <div class="alert-container">
-          <div id="alert" class="alert primary-alert">
+          <div id="alert" class="alert primary">
             <p>This is a primary alert.</p>
             <div id="close" class="button-close">
               <i class="bi bi-x"></i>
             </div>
           </div>
-          <div id="alert" class="alert secondary-alert">
+          <div id="alert" class="alert secondary">
             <p>This is a secondary alert.</p>
             <div id="close" class="button-close">
               <i class="bi bi-x"></i>
             </div>
           </div>
-          <div id="alert" class="alert success-alert">
+          <div id="alert" class="alert success">
             <p>This is a success alert.</p>
             <div id="close" class="button-close">
               <i class="bi bi-x"></i>
             </div>
           </div>
-          <div id="alert" class="alert warning-alert">
+          <div id="alert" class="alert warning">
             <p>This is a warning alert.</p>
             <div id="close" class="button-close">
               <i class="bi bi-x"></i>
@@ -239,12 +279,12 @@
 
       <section id="badges" class="section">
         <h2>Badges</h2>
-        <p>Use our background utility classes to quickly change the appearance of a badge.</p>
+        <p>Use the background utility classes to quickly change the appearance of a badge.</p>
         <div class="badge-container">
-          <span class="badge primary-badge">Primary</span>
-          <span class="badge secondary-badge">Secondary</span>
-          <span class="badge success-badge">Success</span>
-          <span class="badge warning-badge">Warning</span>
+          <span class="badge primary">Primary</span>
+          <span class="badge secondary">Secondary</span>
+          <span class="badge success">Success</span>
+          <span class="badge warning">Warning</span>
         </div>
         <div class="badge-bash">
           <iframe src="https://carbon.now.sh/embed/iXN1yUwqjhFs1aOid1GW" sandbox="allow-scripts allow-same-origin">
@@ -268,25 +308,25 @@
         <h3>Badge on Avatars</h3>
         <div class="badge-avatar-container">
           <div class="avatar-container">
-            <div class="extra-small">
-              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
-              <span class="indicator indicator-xs"></span>
+            <div class="xsm">
+              <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator ind-xs"></span>
             </div>
-            <div class="small">
-              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
-              <span class="indicator indicator-s"></span>
+            <div class="sm">
+              <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator ind-s"></span>
             </div>
-            <div class="medium">
-              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
-              <span class="indicator indicator-m"></span>
+            <div class="md">
+              <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator ind-m"></span>
             </div>
-            <div class="large">
-              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
-              <span class="indicator indicator-l"></span>
+            <div class="lg">
+              <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator ind-l"></span>
             </div>
-            <div class="extra-large">
-              <img class="avatar-image" src="/images/tagore.jpg" alt="avatar image" />
-              <span class="indicator indicator-xl"></span>
+            <div class="xlg">
+              <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+              <span class="indicator ind-xl"></span>
             </div>
           </div>
         </div>
@@ -450,10 +490,193 @@
 
       <section id="inputs" class="section">
         <h2>Inputs</h2>
+        <h3>Textbox</h3>
         <div class="input">
-        <textarea class="textbox" ></textarea>
-        <label class="placeholder">Comments</label>
-      </div>
+          <textarea class="textbox"></textarea>
+          <label class="placeholder">Comments</label>
+        </div>
+        <div class="textbox-bash">
+          <iframe src="https://carbon.now.sh/embed/rVmrntkd93WinvyOlqg1" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <h3>Validation Form</h3>
+        <form id="form" action="" class="form">
+          <div class="fname">
+            <p>First name</p>
+            <input type="text" name="First name" id="fname">
+            <i class="bi bi-check-circle-fill"></i>
+            <i class="bi bi-exclamation-circle-fill"></i>
+          </div>
+          <div class="lname">
+            <p>Last name</p>
+            <input type="text" name="Last name" id="lname">
+            <i class="bi bi-check-circle-fill"></i>
+            <i class="bi bi-exclamation-circle-fill"></i>
+          </div>
+          <div class="uname">
+            <p>Username</p>
+            <span class="prepend">@</span>
+            <input type="text" name="Username" id="uname">
+            <i class="bi bi-check-circle-fill"></i>
+            <i class="bi bi-exclamation-circle-fill"></i>
+          </div>
+          <div class="city">
+            <p>City</p>
+            <input type="text" name="City" id="city">
+            <i class="bi bi-check-circle-fill"></i>
+            <i class="bi bi-exclamation-circle-fill"></i>
+          </div>
+          <div class="state">
+            <p>State</p>
+            <select name="State" id="state">
+              <option value="">Choose a state</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Maharastra">Maharastra</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+            <i class="bi bi-check-circle-fill"></i>
+            <i class="bi bi-exclamation-circle-fill"></i>
+          </div>
+          <div class="zipcode">
+            <p>Zipcode</p>
+            <input type="number" name="Zipcode" id="zipcode">
+            <i class="bi bi-check-circle-fill"></i>
+            <i class="bi bi-exclamation-circle-fill"></i>
+          </div>
+          <input id="submit-btn" type="submit" value="Submit form">
+        </form>
+        <div class="validation-bash">
+          <iframe src="https://carbon.now.sh/embed/3avMF0msX55yoEP8DY7P" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="lists" class="section">
+        <h2>Lists</h2>
+        <div class="list-item-container">
+          <div class="list-item">
+            <div class="list-avatar">
+              <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+            </div>
+            <div class="list-text">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="list-avatar">
+              <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+            </div>
+            <div class="list-text">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="list-avatar">
+              <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+            </div>
+            <div class="list-text">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="list-avatar">
+              <img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+            </div>
+            <div class="list-text">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            </div>
+          </div>
+        </div>
+        <div class="list-bash">
+          <iframe src="https://carbon.now.sh/embed/j2uElam0wBdPS1LLdDhh" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="navigation" class="section">
+        <h2>Navigation</h2>
+        <nav class="navbar">
+          <div class="nav-left">
+            <div class="nav-brand">
+              <h1>
+                <a class="brand-logo" href="">Navbar
+                </a>
+              </h1>
+            </div>
+            <div id="nav-pills">
+              <ul class="nav-links">
+                <li class="link">
+                  <a href="">Home</a>
+                </li>
+                <li class="link">
+                  <a href="">Features</a>
+                </li>
+                <li class="link">
+                  <a href="">Pricing</a>
+                </li>
+                <li class="link">
+                  <a href="">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-right">
+            <button id="nav-toggle"><i class="bi bi-list"></i></button>
+          </div>
+        </nav>
+        <div class="navigation-bash">
+          <iframe src="https://carbon.now.sh/embed/tMgSgAz2Hvtnxv2ubHjL" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="modal" class="section">
+        <h2>Modal</h2>
+        <button id="btn-show-modal" class="btn-show-modal">Show Demo Modal</button>
+        <div id="overlay" class="modal-overlay"></div>
+        <div id="modal-container" class="modal">
+          <header class="modal-header">
+            <p>Modal title</p>
+            <div id="modal-close" class="modal-close">
+              <i class="bi bi-x"></i>
+            </div>
+          </header>
+          <p class="modal-text">This is a centered modal.</p>
+          <footer class="modal-footer">
+            <button id="modal-hide" class="modal-hide">Close</button>
+            <button class="modal-save">Save changes</button>
+          </footer>
+        </div>
+        <div class="modal-bash">
+          <iframe src="https://carbon.now.sh/embed/LmqfF7fASaanfDi5hcPY" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="ratings" class="section">
+        <h2>Ratings</h2>
+        <div class="ratings-container">
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div class="star-num rating-h">
+            <span>4.4</span>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <div class="star-num rating-m">
+            <span>2.5</span>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <div class="star-num rating-l">
+            <span>1.7</span>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
       </section>
     </div>
   </div>
@@ -471,6 +694,7 @@
       <p>Made with love by Tuhin</p>
       <p>Currently version 0.1</p>
     </div>
+  </div>
   </div>
   <script src="/js/rabiui.js"></script>
 </body>

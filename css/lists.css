@@ -1,0 +1,36 @@
+:root {
+  --rb-grey: #d1d5db;
+}
+
+.list-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  padding: 1rem;
+  display: flex;
+  border: 1px solid var(--rb-grey);
+}
+
+.list-item:first-child {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.list-item:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.list-avatar {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.list-text {
+  /* width: 80%; */
+  padding: 1rem;
+  /* border: 1px solid black; */
+}
