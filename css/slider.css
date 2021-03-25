@@ -1,0 +1,17 @@
+:root {
+  --rb-grey: #d1d5db;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.slider-container input {
+  width: 50%;
+  height: 10px;
+  -webkit-appearance: none;
+  outline: none;
+  background-color: var(--rb-grey);
+  border-radius: 1.6rem;
+}

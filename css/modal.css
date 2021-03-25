@@ -17,19 +17,6 @@
   background-color: var(--rb-light-black);
 }
 
-.btn-show-modal {
-  padding: 0.5rem 0.7rem;
-  margin: 0 0.2rem;
-  font-size: 1rem;
-  border: 2px solid var(--rb-primary);
-  border-radius: 5px;
-  margin: auto;
-  opacity: 0.9;
-  cursor: pointer;
-  color: var(--rb-very-light-grey);
-  background-color: var(--rb-primary);
-}
-
 .btn-show-modal:active {
   border-color: var(--rb-primary);
   box-shadow: 0 0 0.5rem 2px var(--rb-primary);
@@ -60,11 +47,10 @@
   font-size: 2rem;
   cursor: pointer;
   padding: 0.2rem 0.5rem;
-  /* border: 1px solid black; */
 }
 
-.modal-text {
-  padding: 1rem;
+.modal .modal-text {
+  padding: 2rem;
 }
 
 .modal-footer {
@@ -112,4 +98,12 @@
 .modal-save:active {
   border-color: var(--rb-primary);
   box-shadow: 0 0 0.5rem 2px var(--rb-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 15rem;
+    left: 20rem;
+    right: 20rem;
+  }
 }

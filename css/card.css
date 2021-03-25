@@ -9,6 +9,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-color: var(--rb-light-grey);
   border: 1px solid var(--rb-primary);
   border-radius: 5px;
@@ -39,14 +40,7 @@
   justify-content: center;
   z-index: 4;
   font-size: 2rem;
-  padding: 0.2rem;
   cursor: pointer;
-  /* border: 1px solid black; */
-}
-
-.dismiss-btn i {
-  width: 100%;
-  height: auto;
 }
 
 .overlay {
@@ -74,5 +68,29 @@
 }
 
 .shadow {
-  box-shadow: 3px 2px 20px var(--rb-shadow);
+  box-shadow: 3px 2px 20px 2px var(--rb-shadow);
+}
+
+.card.shadow {
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 30%;
+  }
+
+  .horizontal {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .horizontal .card-content {
+    flex-shrink: 4;
+  }
+
+  .horizontal .card-content p {
+    padding: 1rem;
+  }
 }

@@ -5,95 +5,93 @@
   --rb-grey: #d1d5db;
 }
 
-.primary-btn {
+.btn {
   padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
   font-size: 1.1rem;
-  border: 2px solid var(--rb-primary);
   border-radius: 5px;
-  color: var(--rb-very-light-grey);
-  background-color: var(--rb-primary);
-  opacity: 0.9;
+  letter-spacing: 1px;
   cursor: pointer;
 }
 
-.primary-btn:hover,
-.icon-btn:hover {
+.btn.primary {
+  color: var(--rb-very-light-grey);
+  background-color: var(--rb-primary);
+  border: 2px solid var(--rb-primary);
+  opacity: 0.9;
+}
+
+.btn.primary:hover,
+.btn.icon:hover,
+.btn.links:hover {
   opacity: 1;
 }
 
-.primary-btn:active {
+.btn.primary:active {
   border-color: var(--rb-primary);
   box-shadow: 0 0 0.5rem 2px var(--rb-primary);
 }
 
-.secondary-btn {
-  padding: 0.2rem 1.5rem;
-  font-size: 1.1rem;
+.btn.secondary {
   border: 2px solid var(--rb-grey);
-  border-radius: 5px;
   color: var(--rb-light-black);
+  background-color: inherit;
   cursor: pointer;
 }
 
-.secondary-btn:hover {
+.btn.secondary:hover {
   color: var(--rb-light-black);
   background-color: var(--rb-grey);
 }
 
-.secondary-btn:active {
+.btn.secondary:active {
   border-color: var(--rb-grey);
   box-shadow: 0 0 0.5rem 2px var(--rb-grey);
 }
 
-.link-btn {
+.btn.links {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
-  padding: 0.5rem 1.5rem;
+  text-align: center;
   opacity: 0.9;
   background-color: var(--rb-primary);
-  color: var(--rb-very-light-grey);
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-.link-btn a {
+.btn.links a {
   text-decoration: none;
   color: var(--rb-very-light-grey);
 }
 
-.link-btn:hover {
-  opacity: 1;
-}
-
-.icon-btn {
-  padding: 0.5rem 1.5rem;
-  font-size: 1.1rem;
-  border: 2px solid var(--rb-primary);
-  border-radius: 5px;
-  opacity: 0.9;
-  color: var(--rb-very-light-grey);
-  background-color: var(--rb-primary);
-  cursor: pointer;
-}
-
-.icon-btn:active {
+.btn.links:active {
   border-color: var(--rb-primary);
   box-shadow: 0 0 0.5rem 2px var(--rb-primary);
 }
-.float-btn {
+
+.btn.icon {
+  opacity: 0.9;
+  border: 2px solid var(--rb-primary);
+  color: var(--rb-very-light-grey);
+  background-color: var(--rb-primary);
+}
+
+.btn.icon:active {
+  border-color: var(--rb-primary);
+  box-shadow: 0 0 0.5rem 2px var(--rb-primary);
+}
+.btn-float {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   font-size: 1.5rem;
   border-radius: 50%;
   padding: 1rem;
+  cursor: pointer;
   width: 60px;
   height: 60px;
-  z-index: 9;
+  z-index: 20;
   background-color: var(--rb-primary);
   color: var(--rb-very-light-grey);
-  box-shadow: 3px 2px 5px var(--rb-light-black);
+  box-shadow: 3px 2px 0.5rem 1px var(--rb-light-black);
   border: 2px solid var(--rb-primary);
 }

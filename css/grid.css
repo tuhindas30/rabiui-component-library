@@ -1,0 +1,46 @@
+:root {
+  --rb-light-black: #111827;
+  --rb-grey: #d1d5db;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.column1,
+.column2,
+.column3,
+.row1,
+.column-f,
+.column-s {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--rb-grey);
+  border: 1px solid var(--rb-light-black);
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row1 {
+  grid-area: row1;
+}
+
+.column-f {
+  grid-area: column-f;
+}
+
+.column-s {
+  grid-area: column-s;
+}
+
+.grid3.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "row1 row1"
+    "column-f column-s";
+}

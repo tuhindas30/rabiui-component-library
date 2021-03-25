@@ -1,0 +1,27 @@
+:root {
+  --rb-primary: #d97706;
+  --rb-light-black: #111827;
+  --rb-very-light-grey: #f9fafb;
+  --rb-shadow: rgb(17, 24, 39, 0.5);
+}
+
+.toast {
+  display: none;
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  z-index: 10;
+  text-align: center;
+  background-color: var(--rb-light-black);
+  color: var(--rb-very-light-grey);
+  box-shadow: 3px 2px 20px 2px var(--rb-shadow);
+}
+
+@media screen and (min-width: 768px) {
+  .toast {
+    left: 20rem;
+    right: 20rem;
+  }
+}

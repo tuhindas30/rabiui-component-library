@@ -32,7 +32,6 @@
   padding: 0.5rem 0;
   color: var(--rb-light-black);
   transition: 0.2s;
-  /* border: 1px solid black; */
 }
 
 .textbox:focus + .placeholder {
@@ -40,14 +39,10 @@
   font-size: 1rem;
 }
 
-/* .form {
-  border: 1px solid black;
-} */
-
 .form {
-  padding: 1rem;
+  padding: 2rem;
   border: 1px solid var(--rb-grey);
-  box-shadow: 3px 2px 20px var(--rb-shadow);
+  border-radius: 10px;
 }
 
 .form p {
@@ -95,13 +90,12 @@ select {
 
 .prepend {
   position: absolute;
-  top: 2.4rem;
+  top: 2.8rem;
   left: 1.1px;
   padding: 0.5rem 0.7rem;
   background-color: var(--rb-grey);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  /* border: 1px solid var(--rb-light-black); */
 }
 
 .form input:focus,
@@ -172,4 +166,29 @@ select:focus {
 .zipcode.error input {
   border: 2px solid var(--rb-red);
   box-shadow: 0 0 0.5rem 2px var(--rb-red);
+}
+
+.btn.primary.mz {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .prepend {
+    top: 2.8rem;
+  }
+
+  .fname i,
+  .lname i,
+  .uname i,
+  .city i,
+  .zipcode i {
+    top: 3.2rem;
+    right: 1rem;
+  }
+
+  .state i {
+    position: absolute;
+    top: 3.2rem;
+    right: 2rem;
+  }
 }

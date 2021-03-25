@@ -3,10 +3,10 @@
   --rb-secondary-alert: rgb(156, 163, 175, 0.2);
   --rb-success-alert: rgb(16, 185, 129, 0.2);
   --rb-warning-alert: rgb(251, 191, 36, 0.2);
-  --rb-primary: #d97706;
-  --rb-dark-grey: #9ca3af;
-  --rb-green: #10b981;
-  --rb-yellow: #fbbf24;
+  --rb-very-dark-brown: #78350f;
+  --rb-light-black: #111827;
+  --rb-very-dark-green: #064e3b;
+  /* --rb-orange: #f59e0b; */
 }
 
 .alert {
@@ -15,6 +15,7 @@
   justify-content: space-between;
   padding: 1rem 2rem;
   margin: 0.5rem 0;
+  letter-spacing: 1px;
   border-radius: 5px;
 }
 
@@ -23,24 +24,27 @@
 }
 
 .alert.primary {
-  color: var(--rb-primary);
+  color: var(--rb-very-dark-brown);
   background-color: var(--rb-primary-alert);
-  border: 1px solid var(--rb-primary);
+  border: 1px solid var(--rb-very-dark-brown);
 }
 
 .alert.secondary {
+  color: var(--rb-light-black);
   background-color: var(--rb-secondary-alert);
-  border: 1px solid var(--rb-dark-grey);
+  border: 1px solid var(--rb-light-black);
 }
 
 .alert.success {
+  color: var(--rb-very-dark-green);
   background-color: var(--rb-success-alert);
-  border: 1px solid var(--rb-green);
+  border: 1px solid var(--rb-very-dark-green);
 }
 
 .alert.warning {
+  color: var(--rb-very-dark-brown);
   background-color: var(--rb-warning-alert);
-  border: 1px solid var(--rb-yellow);
+  border: 1px solid var(--rb-very-dark-brown);
 }
 
 .button-close {

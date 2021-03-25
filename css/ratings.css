@@ -11,11 +11,6 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem 0;
-  /* border: 1px solid black; */
-}
-
-.star {
-  /* border: 1px solid black; */
 }
 
 .star i.bi-star-fill {
@@ -25,9 +20,7 @@
 .star-num {
   font-size: 0.9rem;
   padding: 0.2rem 0.7rem;
-
   border-radius: 5px;
-  /* border: 1px solid black; */
 }
 
 .rating-h {

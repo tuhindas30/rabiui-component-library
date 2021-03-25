@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Assistant", sans-serif;
 }
 
 html {
@@ -13,27 +14,23 @@ html {
 
 :root {
   --ff: "Assistant", sans-serif;
-  --code-ff: "Source Code Pro", monospace;
   --rb-primary: #d97706;
   --rb-very-light-grey: #f9fafb;
   --rb-light-grey: #f3f4f6;
   --rb-grey: #d1d5db;
+  --rb-dark-grey: #6b7280;
   --rb-light-black: #111827;
   --rb-red: #dc2626;
-  --rb-blue: #3b82f6;
 }
 
 body {
   background-color: var(--rb-light-grey);
 }
 
-li {
-  list-style-position: inside;
-}
-
 /* Mobile Design */
 
 /* Navbar */
+
 .navbar {
   z-index: 10;
   display: flex;
@@ -44,7 +41,6 @@ li {
   padding: 1.2rem 2rem;
   background-color: var(--rb-primary);
   color: var(--rb-very-light-grey);
-  /* border: 1px solid black; */
 }
 
 .fix-top {
@@ -169,29 +165,43 @@ li {
 .documentation {
   display: block;
   max-width: 100%;
+  color: var(--rb-light-black);
 }
 
 .section {
-  font-family: var(--ff);
   padding: 1rem 2rem;
-  /* border: 1px solid black; */
 }
 
-.section-heading {
+.section .intro h1 {
   font-size: 2.5rem;
 }
 
-.section-para {
+.section .intro p {
   font-size: 1.5rem;
   font-weight: 300;
-}
-
-.section h2 {
   padding: 1rem 0;
 }
 
+.section h2,
 .section h3 {
   padding: 1rem 0;
+}
+
+.section p {
+  font-size: 1.2rem;
+}
+
+.section .text-container h1 {
+  font-size: 2rem;
+}
+
+.section .text-container h2 {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.section .text-container h3 {
+  padding: 0;
 }
 
 .css-bash,
@@ -215,9 +225,11 @@ li {
 .validation-bash,
 .list-bash,
 .navigation-bash,
-.modal-bash {
+.modal-bash,
+.ratings-bash,
+.text-bash,
+.toast-bash {
   overflow: auto;
-  /* border: 1px solid black; */
 }
 
 iframe {
@@ -225,12 +237,11 @@ iframe {
   border: 0;
   transform: scale(1);
   overflow: hidden;
-  /* border: 1px solid black; */
 }
 
 .css-bash iframe {
-  width: 654px;
-  height: 108px;
+  width: 740px;
+  height: 105px;
 }
 
 .js-bash iframe {
@@ -239,23 +250,23 @@ iframe {
 }
 
 .starter-template-bash iframe {
-  width: 687px;
-  height: 450px;
+  width: 790px;
+  height: 430px;
 }
 
 .avatar-bash iframe {
-  width: 740px;
+  width: 690px;
   height: 344px;
 }
 
 .alert-bash iframe {
   width: 410px;
-  height: 520px;
+  height: 500px;
 }
 
 .badge-bash iframe {
-  width: 440px;
-  height: 160px;
+  width: 445px;
+  height: 140px;
 }
 
 .badge-icon-bash iframe {
@@ -269,28 +280,37 @@ iframe {
 }
 
 .button-bash iframe {
-  width: 730px;
-  height: 308px;
+  width: 450px;
+  height: 300px;
 }
 
 .card-badge-bash iframe {
-  width: 670px;
+  width: 730px;
   height: 290px;
 }
 
-.card-dismiss-bash iframe,
+.card-dismiss-bash iframe {
+  width: 700px;
+  height: 340px;
+}
+
 .card-overlay-bash iframe {
-  width: 665px;
-  height: 344px;
+  width: 800px;
+  height: 320px;
 }
 
 .card-text-bash iframe {
-  width: 670px;
-  height: 380px;
+  width: 750px;
+  height: 375px;
+}
+
+.card-horizontal-bash iframe {
+  width: 700px;
+  height: 308px;
 }
 
 .card-shadow-bash iframe {
-  width: 670px;
+  width: 690px;
   height: 272px;
 }
 
@@ -300,7 +320,7 @@ iframe {
 }
 
 .image-round-bash iframe {
-  width: 640px;
+  width: 590px;
   height: 128px;
 }
 
@@ -315,26 +335,39 @@ iframe {
 }
 
 .list-bash iframe {
-  width: 805px;
-  height: 686px;
+  width: 760px;
+  height: 540px;
 }
 
 .navigation-bash iframe {
-  width: 603px;
-  height: 578px;
+  width: 520px;
+  height: 800px;
 }
 
 .modal-bash iframe {
-  width: 586px;
+  width: 600px;
   height: 360px;
+}
+
+.ratings-bash iframe {
+  width: 350px;
+  height: 416px;
+}
+
+.text-bash iframe {
+  width: 550px;
+  height: 230px;
+}
+
+.toast-bash iframe {
+  width: 603px;
+  height: 150px;
 }
 
 .avatar-container {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   padding: 1rem 0;
-  /* border: 1px solid black; */
 }
 
 .alert-container {
@@ -347,7 +380,6 @@ iframe {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 1rem 0;
-  /* border: 1px solid black; */
 }
 
 .badge-icon-container {
@@ -355,7 +387,6 @@ iframe {
   justify-content: space-around;
   padding: 1rem 0;
   font-size: 3rem;
-  /* border: 1px solid black; */
 }
 
 .btn-container {
@@ -368,10 +399,11 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: space-between;
   padding: 1rem 0;
-  height: 100px;
-  color: var(--rb-grey);
+  color: var(--rb-light-black);
+  background-color: var(--rb-grey);
 }
 
 .footer-pills {
@@ -379,7 +411,7 @@ iframe {
   width: 100%;
   justify-content: space-evenly;
   list-style: none;
-  /* border: 1px solid black; */
+  padding: 0.5rem 0;
 }
 
 .footer-pills .link a {
@@ -387,7 +419,7 @@ iframe {
 }
 
 .footer-text {
-  color: var(--rb-light-black);
+  padding: 0.5rem 0;
 }
 
 /* Disable desktop */
@@ -424,8 +456,7 @@ iframe {
   .navbar {
     grid-area: nav;
     height: 80px;
-    padding: 1.2rem 5rem;
-    /* border: 1px solid black; */
+    padding: 1.2rem 2rem;
   }
 
   .sidebar {
@@ -435,13 +466,14 @@ iframe {
     top: 4rem;
     left: 0;
     width: 20vw;
-    height: 90vh;
+    height: 66vh;
     overflow: auto;
     padding: 2rem 0;
     font-size: 1.2rem;
     font-weight: 600;
     font-family: var(--ff);
-    border: 1px solid var(--rb-grey);
+    background-color: var(--rb-light-grey);
+    border-right: 1px solid var(--rb-grey);
   }
 
   .documentation {
@@ -449,9 +481,14 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: var(--rb-light-black);
     max-width: 90%;
     margin: 5rem auto;
-    /* border: 1px solid black; */
+  }
+
+  .footer {
+    grid-area: footer;
+    z-index: 9;
   }
 
   .grid-row {
@@ -459,14 +496,14 @@ iframe {
     grid-template-columns: 20vw 1fr;
     grid-template-areas:
       "nav nav "
-      "sidebar doc";
+      "sidebar doc"
+      "footer footer";
   }
 
   /* Navbar left */
 
   .nav-brand {
     font-size: 1.2rem;
-    /* border: 1px solid black; */
   }
 
   #nav-links-desktop {
@@ -478,7 +515,6 @@ iframe {
     height: auto;
     list-style: none;
     font-size: 1.2rem;
-    /* border: 1px solid black; */
   }
 
   .nav-links-desktop .link {
@@ -498,13 +534,11 @@ iframe {
     align-items: center;
     justify-content: space-between;
     flex-basis: 40%;
-    /* border: 1px solid black; */
   }
 
   .search-desktop {
     display: block;
     width: 100%;
-    /* border: 1px solid black; */
   }
 
   .search-desktop input {
@@ -549,44 +583,43 @@ iframe {
 
   .sidenav-pills {
     list-style: none;
-    /* border: 1px solid black; */
-  }
-
-  .sidenav-pills .link {
-    padding: 0.5rem 0;
-    /* border: 1px solid black; */
   }
 
   .sidenav-pills .link a {
     text-decoration: none;
     display: block;
-    text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0.5rem 3rem;
     color: var(--rb-light-black);
   }
 
   .sidenav-pills .link a:hover {
-    background-color: var(--light-grey);
-    color: var(--rb-light-black);
+    color: var(--rb-primary);
   }
 
   .section {
     padding: 1.5rem 2rem;
-    /* border: 1px solid black; */
   }
 
-  .section-heading {
+  .section .intro h1 {
     font-size: 3rem;
   }
 
-  .section .section-para {
+  .section .intro p {
     font-size: 2rem;
     font-weight: 300;
   }
 
-  .section p {
-    font-size: 1.2rem;
-    padding: 1rem 0;
+  .section .text-container h1 {
+    font-size: 2rem;
+  }
+
+  .section .text-container h2 {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  .section .text-container h3 {
+    padding: 0;
   }
 
   /* Disbling mobile */

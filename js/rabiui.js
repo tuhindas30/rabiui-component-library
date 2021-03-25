@@ -79,7 +79,6 @@ form.addEventListener("submit", (e) => {
 });
 
 const checkInputs = () => {
-  // trim to remove the whitespaces
   const firstNameValue = fname.value.trim();
   const lastNameValue = lname.value.trim();
   const userNameValue = uname.value.trim();
@@ -151,9 +150,16 @@ modalHide.addEventListener("click", () => {
   modalOverlay.style.display = "none";
 });
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modalContainer.style.display = "none";
-    modalOverlay.style.display = "none";
-  }
-};
+// Toast
+
+const toast = document.getElementById("toast-contents");
+
+const showToastBtn = document.getElementById("btn-show-toast");
+
+showToastBtn.addEventListener("click", () => {
+  toast.style.display = "block";
+  if (toast.style.display === "block")
+    setTimeout(() => {
+      toast.style.display = "none";
+    }, 5000);
+});
