@@ -546,8 +546,8 @@ iframe {
     font-size: 1.1rem;
     width: 60%;
     outline: none;
+    border: none;
     background-color: var(--rb-light-grey);
-    border: 2px solid var(--rb-light-black);
     border-radius: 5px;
   }
 
@@ -558,7 +558,7 @@ iframe {
 
   .search-desktop .search-button {
     background-color: transparent;
-    border: 2px solid var(--rb-light-black);
+    border: none;
     border-radius: 5px;
     color: var(--rb-very-light-grey);
     padding: 8px 0.7rem;
@@ -576,7 +576,6 @@ iframe {
     display: block;
     font-size: 1.2rem;
     padding: 0.5rem;
-    /* border: 1px solid black; */
   }
 
   /* Sidebar */
