@@ -1,11 +1,3 @@
-:root {
-  --rb-primary: #d97706;
-  --rb-dark-green: #064e3b;
-  --rb-very-light-grey: #f9fafb;
-  --rb-light-red: #ef4444;
-  --rb-yellow: #fbbf24;
-}
-
 .ratings-container {
   display: flex;
   align-items: center;

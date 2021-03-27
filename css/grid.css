@@ -1,8 +1,3 @@
-:root {
-  --rb-light-black: #111827;
-  --rb-grey: #d1d5db;
-}
-
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;

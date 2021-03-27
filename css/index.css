@@ -1,31 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;500;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  letter-spacing: 1px;
-  font-family: "Assistant", sans-serif;
-}
-
-:root {
-  --ff: "Assistant", sans-serif;
-  --rb-primary: #d97706;
-  --rb-very-light-grey: #f9fafb;
-  --rb-light-grey: #f3f4f6;
-  --rb-grey: #d1d5db;
-  --rb-dark-grey: #6b7280;
-  --rb-light-black: #111827;
-  --rb-black: #17181e;
-  --rb-red: #dc2626;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--rb-light-grey);
+}
+
+.active-mobile {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.active-desktop {
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 /* Mobile Design */
@@ -38,8 +26,7 @@ body {
   align-items: center;
   height: 4rem;
   justify-content: space-between;
-  font-family: var(--ff);
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 2rem;
   background-color: var(--rb-primary);
   color: var(--rb-very-light-grey);
 }

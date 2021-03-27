@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;500;700&display=swap");
 @import "/css/avatar.css";
 @import "/css/alert.css";
 @import "/css/badge.css";
@@ -12,3 +13,28 @@
 @import "/css/slider.css";
 @import "/css/grid.css";
 @import "/css/toast.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Assistant", sans-serif;
+}
+
+:root {
+  --rb-primary: #d97706;
+  --rb-very-light-grey: #f9fafb;
+  --rb-light-grey: #f3f4f6;
+  --rb-grey: #d1d5db;
+  --rb-dark-grey: #9ca3af;
+  --rb-light-black: #111827;
+  --rb-black: #17181e;
+  --rb-light-red: #ef4444;
+  --rb-red: #dc2626;
+  --rb-primary: #d97706;
+  --rb-green: #10b981;
+  --rb-dark-green: #064e3b;
+  --rb-yellow: #fbbf24;
+  --rb-light-black-shadow: rgb(17, 24, 39, 0.5);
+}

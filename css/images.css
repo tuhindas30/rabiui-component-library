@@ -1,18 +1,8 @@
-.image-container {
-  width: 100%;
-}
-
 .image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .image.round {
   border-radius: 50%;
-}
-
-@media screen and (min-width: 768px) {
-  .image-container {
-    width: 50%;
-  }
 }
