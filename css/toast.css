@@ -9,7 +9,7 @@
   text-align: center;
   background-color: var(--rb-light-black);
   color: var(--rb-very-light-grey);
-  box-shadow: 3px 2px 20px 2px var(--rb-light-black-shadow);
+  box-shadow: 0.18rem 0.1rem 0.5rem 1px var(--rb-light-black-shadow);
 }
 
 @media screen and (min-width: 768px) {

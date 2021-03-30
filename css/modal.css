@@ -12,7 +12,7 @@
 
 .btn-show-modal:active {
   border-color: var(--rb-primary);
-  box-shadow: 0 0 0.5rem 2px var(--rb-primary);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-primary);
 }
 
 .modal {
@@ -59,8 +59,8 @@
 
 .modal-hide {
   font-size: 1rem;
-  border: 2px solid var(--rb-grey);
-  border-radius: 5px;
+  border: 0.1rem solid var(--rb-grey);
+  border-radius: 0.3rem;
   opacity: 0.9;
   cursor: pointer;
   color: var(--rb-light-black);
@@ -75,13 +75,13 @@
 
 .modal-hide:active {
   border-color: var(--rb-grey);
-  box-shadow: 0 0 0.5rem 2px var(--rb-grey);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-grey);
 }
 
 .modal-save {
   font-size: 1rem;
-  border: 2px solid var(--rb-primary);
-  border-radius: 5px;
+  border: 0.1rem solid var(--rb-primary);
+  border-radius: 0.3rem;
   opacity: 0.9;
   cursor: pointer;
   color: var(--rb-very-light-grey);
@@ -90,7 +90,7 @@
 
 .modal-save:active {
   border-color: var(--rb-primary);
-  box-shadow: 0 0 0.5rem 2px var(--rb-primary);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-primary);
 }
 
 @media screen and (min-width: 768px) {

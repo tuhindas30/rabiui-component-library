@@ -6,13 +6,13 @@
   height: 20vh;
   padding: 2rem 1rem;
   font-size: 1.1rem;
-  border: 2px solid var(--rb-grey);
+  border: 0.1rem solid var(--rb-grey);
 }
 
 .textbox:focus {
   outline: none;
-  border: 2px solid var(--rb-primary);
-  box-shadow: 0 0 0.5rem 2px var(--rb-primary);
+  border: 0.1rem solid var(--rb-primary);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-primary);
 }
 
 .placeholder {
@@ -33,7 +33,7 @@
 .form {
   padding: 2rem;
   border: 1px solid var(--rb-grey);
-  border-radius: 10px;
+  border-radius: 0.6rem;
 }
 
 .form p {
@@ -46,8 +46,8 @@ select {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
-  border: 2px solid var(--rb-grey);
-  border-radius: 5px;
+  border: 0.1rem solid var(--rb-grey);
+  border-radius: 0.3rem;
 }
 
 .fname,
@@ -85,15 +85,15 @@ select {
   left: 1.1px;
   padding: 0.5rem 0.7rem;
   background-color: var(--rb-grey);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
 
 .form input:focus,
 select:focus {
   outline: none;
-  border: 2px solid var(--rb-primary);
-  box-shadow: 0 0 0.5rem 2px var(--rb-primary);
+  border: 0.1rem solid var(--rb-primary);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-primary);
 }
 
 .form input[type="submit"] {
@@ -103,8 +103,8 @@ select:focus {
   opacity: 0.9;
   background-color: var(--rb-primary);
   color: var(--rb-very-light-grey);
-  border: 2px solid var(--rb-primary);
-  border-radius: 5px;
+  border: 0.1rem solid var(--rb-primary);
+  border-radius: 0.3rem;
 }
 
 .form input[type="submit"]:hover {
@@ -145,8 +145,8 @@ select:focus {
 .city.success input,
 .state.success select,
 .zipcode.success input {
-  border: 2px solid var(--rb-green);
-  box-shadow: 0 0 0.5rem 2px var(--rb-green);
+  border: 0.1rem solid var(--rb-green);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-green);
 }
 
 .fname.error input,
@@ -155,8 +155,8 @@ select:focus {
 .city.error input,
 .state.error select,
 .zipcode.error input {
-  border: 2px solid var(--rb-red);
-  box-shadow: 0 0 0.5rem 2px var(--rb-red);
+  border: 0.1rem solid var(--rb-red);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-red);
 }
 
 .btn.primary.mz {

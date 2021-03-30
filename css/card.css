@@ -5,7 +5,7 @@
   width: 100%;
   background-color: var(--rb-light-grey);
   border: 1px solid var(--rb-primary);
-  border-radius: 5px;
+  border-radius: 0.3rem;
 }
 
 .card img,
@@ -61,7 +61,7 @@
 }
 
 .shadow {
-  box-shadow: 3px 2px 20px 2px var(--rb-light-black-shadow);
+  box-shadow: 0.18px 0.1rem 1.25rem 0.1rem var(--rb-light-black-shadow);
 }
 
 .card.shadow {

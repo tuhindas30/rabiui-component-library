@@ -8,18 +8,17 @@
   padding: 1rem;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   border: 1px solid var(--rb-grey);
 }
 
 .list-item:first-child {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
 }
 
 .list-item:last-child {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
 }
 
 .list-avatar {

@@ -33,8 +33,14 @@
   --rb-light-red: #ef4444;
   --rb-red: #dc2626;
   --rb-primary: #d97706;
+  --rb-very-dark-brown: #78350f;
   --rb-green: #10b981;
   --rb-dark-green: #064e3b;
+  --rb-very-dark-green: #064e3b;
   --rb-yellow: #fbbf24;
   --rb-light-black-shadow: rgb(17, 24, 39, 0.5);
+  --rb-primary-alert: rgb(217, 119, 6, 0.2);
+  --rb-secondary-alert: rgb(156, 163, 175, 0.2);
+  --rb-success-alert: rgb(16, 185, 129, 0.2);
+  --rb-warning-alert: rgb(251, 191, 36, 0.2);
 }
