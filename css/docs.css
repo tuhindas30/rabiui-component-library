@@ -188,166 +188,6 @@ body {
   padding: 0;
 }
 
-.css-bash,
-.js-bash,
-.starter-template-bash,
-.avatar-bash,
-.alert-bash,
-.badge-bash,
-.badge-icon-bash,
-.badge-avatar-bash,
-.button-bash,
-.card-badge-bash,
-.card-dismiss-bash,
-.card-overlay-bash,
-.card-text-bash,
-.card-horizontal-bash,
-.card-shadow-bash,
-.image-responsive-bash,
-.image-round-bash,
-.textbox-bash,
-.validation-bash,
-.list-bash,
-.navigation-bash,
-.modal-bash,
-.ratings-bash,
-.text-bash,
-.toast-bash {
-  overflow: auto;
-}
-
-iframe {
-  margin-top: 1rem;
-  border: 0;
-  transform: scale(1);
-  overflow: hidden;
-}
-
-.css-bash iframe {
-  width: 740px;
-  height: 105px;
-}
-
-.js-bash iframe {
-  width: 510px;
-  height: 125px;
-}
-
-.starter-template-bash iframe {
-  width: 790px;
-  height: 430px;
-}
-
-.avatar-bash iframe {
-  width: 690px;
-  height: 344px;
-}
-
-.alert-bash iframe {
-  width: 410px;
-  height: 500px;
-}
-
-.badge-bash iframe {
-  width: 445px;
-  height: 140px;
-}
-
-.badge-icon-bash iframe {
-  width: 333px;
-  height: 250px;
-}
-
-.badge-avatar-bash iframe {
-  width: 750px;
-  height: 430px;
-}
-
-.button-bash iframe {
-  width: 450px;
-  height: 300px;
-}
-
-.card-badge-bash iframe {
-  width: 730px;
-  height: 290px;
-}
-
-.card-dismiss-bash iframe {
-  width: 700px;
-  height: 340px;
-}
-
-.card-overlay-bash iframe {
-  width: 800px;
-  height: 320px;
-}
-
-.card-text-bash iframe {
-  width: 750px;
-  height: 375px;
-}
-
-.card-horizontal-bash iframe {
-  width: 700px;
-  height: 308px;
-}
-
-.card-shadow-bash iframe {
-  width: 690px;
-  height: 272px;
-}
-
-.image-responsive-bash iframe {
-  width: 540px;
-  height: 128px;
-}
-
-.image-round-bash iframe {
-  width: 590px;
-  height: 128px;
-}
-
-.textbox-bash iframe {
-  width: 415px;
-  height: 146px;
-}
-
-.validation-bash iframe {
-  width: 560px;
-  height: 902px;
-}
-
-.list-bash iframe {
-  width: 760px;
-  height: 540px;
-}
-
-.navigation-bash iframe {
-  width: 520px;
-  height: 800px;
-}
-
-.modal-bash iframe {
-  width: 600px;
-  height: 360px;
-}
-
-.ratings-bash iframe {
-  width: 350px;
-  height: 416px;
-}
-
-.text-bash iframe {
-  width: 550px;
-  height: 230px;
-}
-
-.toast-bash iframe {
-  width: 603px;
-  height: 150px;
-}
-
 .avatar-container {
   display: flex;
   flex-wrap: wrap;
@@ -409,22 +249,10 @@ iframe {
 
 /* Disable desktop */
 
-.version-desktop {
-  display: none;
-}
-
-#nav-links-desktop {
-  display: none;
-}
-
-.nav-links-desktop {
-  display: none;
-}
-
-.search-desktop {
-  display: none;
-}
-
+#nav-links-desktop,
+.version-desktop,
+.nav-links-desktop,
+.search-desktop,
 .sidebar {
   display: none;
 }
@@ -606,18 +434,9 @@ iframe {
 
   /* Disbling mobile */
 
-  #nav-toggle {
-    display: none;
-  }
-
-  .nav-links-mobile {
-    display: none;
-  }
-
-  .search-mobile {
-    display: none;
-  }
-
+  #nav-toggle,
+  .nav-links-mobile,
+  .search-mobile,
   .version-mobile {
     display: none;
   }

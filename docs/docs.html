@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/highlight/styles/night-owl.css">
   <link rel="stylesheet" href="/css/docs.css" />
   <link rel="stylesheet" href="/css/rabiui.components.css">
   <title>Rabi UI | Docs</title>
@@ -186,34 +187,56 @@
             style="color: var(--rb-red);">head</span>&gt; before all other stylesheets to load my CSS.
         </p>
 
-        <div class="css-bash">
-          <iframe src="https://carbon.now.sh/embed/aMgWIJUvP7fbZkrhjiZ8" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+        <pre>
+          <code class="html">
+            &lt;link rel="stylesheet" href="https://rabiui.netlify.app/css/rabiui.components.css">
+        </code>
+      </pre>
 
-        <h2>JS</h2>
+           <h2>JS</h2>
         <p>Many of my components require the use of JavaScript to function. Place the following &lt;<span
             style="color: var(--rb-red);">script</span>&gt;
           near the end of your pages, right before the closing &lt;/<span style="color: var(--rb-red);">body</span>&gt;
           tag, to enable them.
         </p>
 
-        <div class="js-bash">
-          <iframe src="https://carbon.now.sh/embed/Ma6sRx2XRsdXdBsnhHza" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+        <pre>
+          <code class="html">
+            &lt;script src="https://rabiui.netlify.app/js/rabiui.js">&lt;/script>
+        </code>
+      </pre>
 
-        <h2>Starter template</h2>
+           <h2>Starter template</h2>
         <p>Be sure to have your pages set up with the latest design and development standards. That means using an
           HTML5
           doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your
           pages
           should look like this:</p>
 
-        <div class="starter-template-bash">
-          <iframe src="https://carbon.now.sh/embed/HmAn5NoU2fri75zyLBW3" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+        <pre>
+            <code class="html">
+            &lt;!DOCTYPE html>
+              &lt;html lang="en">
+                &lt;head>
+                  &lt;!-- Required meta tags -->
+                  &lt;meta charset="utf-8">
+                  &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+
+                  &lt;!-- Rabi CSS -->
+                  &lt;link rel="stylesheet" href="https://rabiui.netlify.app/css/rabiui.components.css">
+
+                  &lt;title>Rabi Everywhere&lt;/title>
+                &lt;/head>
+                &lt;body>
+                  &lt;h1>Welcome to Rabi UI&lt;/h1>
+
+                  &lt;!-- Required Rabi UI script -->
+                  &lt;script src="https://rabiui.netlify.app/js/rabiui.js">&lt;/script>
+
+                &lt;/body>
+              &lt;/html>
+          </code>
+        </pre>
       </section>
 
       <section id="avatars" class="section">
@@ -236,10 +259,26 @@
             <img class="image round" src="/images/tagore.jpg" alt="avatar image" />
           </div>
         </div>
-        <div class="avatar-bash">
-          <iframe src="https://carbon.now.sh/embed/I8ibeohe7rjsBjrNC0Cv" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="xsm">
+              &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+            &lt;/div>
+            &lt;div class="sm">
+              &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+            &lt;/div>
+            &lt;div class="md">
+              &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+            &lt;/div>
+            &lt;div class="lg">
+              &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+            &lt;/div>
+            &lt;div class="xlg">
+              &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+            &lt;/div>
+        </code>
+      </pre>
       </section>
 
       <section id="alerts" class="section">
@@ -273,10 +312,34 @@
           </div>
         </div>
 
-        <div class="alert-bash">
-          <iframe src="https://carbon.now.sh/embed/HaOlydtokQWedQ7BEymB" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+        <pre>
+          <code class="html">
+            &lt;div id="alert" class="alert primary">
+              &lt;p>This is a primary alert.&lt;/p>
+              &lt;div id="close" class="button-close">
+                &lt;i class="bi bi-x">&lt;/i>
+              &lt;/div>
+            &lt;/div>
+            &lt;div id="alert" class="alert secondary">
+              &lt;p>This is a secondary alert.&lt;/p>
+              &lt;div id="close" class="button-close">
+                &lt;i class="bi bi-x">&lt;/i>
+              &lt;/div>
+            &lt;/div>
+            &lt;div id="alert" class="alert success">
+              &lt;p>This is a success alert.&lt;/p>
+              &lt;div id="close" class="button-close">
+                &lt;i class="bi bi-x">&lt;/i>
+              &lt;/div>
+            &lt;/div>
+            &lt;div id="alert" class="alert warning">
+              &lt;p>This is a warning alert.&lt;/p>
+              &lt;div id="close" class="button-close">
+                &lt;i class="bi bi-x">&lt;/i>
+              &lt;/div>
+            &lt;/div>
+        </code>
+      </pre>
       </section>
 
       <section id="badges" class="section">
@@ -288,11 +351,15 @@
           <span class="badge success">Success</span>
           <span class="badge warning">Warning</span>
         </div>
-        <div class="badge-bash">
-          <iframe src="https://carbon.now.sh/embed/iXN1yUwqjhFs1aOid1GW" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-        <h3>Badge on Icons</h3>
+
+        <pre>
+          <code class="html">
+            &lt;span class="badge primary">Primary&lt;/span>
+            &lt;span class="badge secondary">Secondary&lt;/span>
+            &lt;span class="badge success">Success&lt;/span>
+            &lt;span class="badge warning">Warning&lt;/span>
+        </code>
+      </pre>     <h3>Badge on Icons</h3>
         <div class="badge-icon-container">
           <div class="badge-icon">
             <i class="bi bi-cart3"></i>
@@ -303,11 +370,21 @@
             <span class="badge-i">3</span>
           </div>
         </div>
-        <div class="badge-icon-bash">
-          <iframe src="https://carbon.now.sh/embed/ibfEyLwdT1aYuWVtPiej" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-        <h3>Badge on Avatars</h3>
+
+        <pre>
+          <code class="html">
+            &lt;div class="badge-icon">
+              &lt;i class="bi bi-cart3">&lt;/i>
+              &lt;span class="badge-i">5&lt;/span>
+            &lt;/div>
+            
+            &lt;div class="badge-icon">
+              &lt;i class="bi bi-bell-fill">&lt;/i>
+              &lt;span class="badge-i">3&lt;/span>
+            &lt;/div>
+        </code>
+      </pre>
+     <h3>Badge on Avatars</h3>
         <div class="badge-avatar-container">
           <div class="avatar-container">
             <div class="xsm">
@@ -332,10 +409,31 @@
             </div>
           </div>
         </div>
-        <div class="badge-avatar-bash">
-          <iframe src="https://carbon.now.sh/embed/r3z1rVqcdPx2HXOYH9f8" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="xsm">
+              &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+              &lt;span class="indicator ind-xs">&lt;/span>
+            &lt;/div>
+            &lt;div class="sm">
+              &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+              &lt;span class="indicator ind-s">&lt;/span>
+            &lt;/div>
+            &lt;div class="md">
+              &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+              &lt;span class="indicator ind-m">&lt;/span>
+            &lt;/div>
+            &lt;div class="lg">
+              &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+              &lt;span class="indicator ind-l">&lt;/span>
+            &lt;/div>
+            &lt;div class="xlg">
+              &lt;img class="image image-round" src="/images/tagore.jpg" alt="avatar image" />
+              &lt;span class="indicator ind-xl">&lt;/span>
+            &lt;/div>
+        </code>
+      </pre>
       </section>
 
       <section id="buttons" class="section">
@@ -354,10 +452,23 @@
             <i class="bi bi-arrow-up"></i>
           </button>
         </div>
-        <div class="button-bash">
-          <iframe src="https://carbon.now.sh/embed/XD4IOS4himyrCBlp3wkX" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;button class="btn primary">Primary&lt;/button>
+            &lt;button class="btn secondary">Secondary&lt;/button>
+            &lt;div class="btn links">
+              &lt;a href="">Link Button&lt;/a>
+            &lt;/div>
+            &lt;button class="btn icon">
+              &lt;i class="bi bi-house-fill">&lt;/i>
+              &lt;span style="padding: 0 .5rem">Home&lt;/span>
+            &lt;/button>
+            &lt;button id="float-btn" class="btn-float">
+              &lt;i class="bi bi-arrow-up">&lt;/i>
+            &lt;/button>
+        </code>
+      </pre>
       </section>
 
       <section id="cards" class="section">
@@ -374,10 +485,22 @@
           </div>
           <span class="badge primary card-badge">Legend</span>
         </div>
-        <div class="card-badge-bash">
-          <iframe src="https://carbon.now.sh/embed/Ra9frtDQ54M6gZS9RH7w" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="card">
+              &lt;img src="/images/tagore.jpg" alt="image" />
+              &lt;div class="card-content">
+                &lt;p>
+                "In our desire for eternal life we pray for an eternity of our habit and 
+                      comfort, forgetting thatimmortality is in repeatedly transcending the 
+                      definite forms of life in order to pursue the infinite truth of life."
+                &lt;/p>
+              &lt;/div>
+              &lt;span class="badge primary card-badge">Legend&lt;/span>
+            &lt;/div>
+        </code>
+      </pre>
         <h3>Cards with dismiss</h3>
         <div id="card" class="card">
           <img src="/images/tagore.jpg" alt="image" />
@@ -393,11 +516,27 @@
             <i class="bi bi-x"></i>
           </div>
         </div>
-        <div class="card-dismiss-bash">
-          <iframe src="https://carbon.now.sh/embed/dgJVxByTOUJS2t5rc4zn" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-        <h3>Cards with overlay</h3>
+
+        <pre>
+          <code class="html">
+            &lt;div id="card" class="card">
+              &lt;img src="/images/tagore.jpg" alt="image" />
+              &lt;div class="card-content">
+                &lt;p>
+                    "According to the true Indian view, our consciousness of the world, 
+                      merely as the sum total of things that exist, and as governed by 
+                      laws, is imperfect. But it is perfect when our consciousness 
+                      realizes all things as spiritually one with it, and there"
+                &lt;/p>
+              &lt;/div>
+              &lt;span class="badge primary card-badge">Legend&lt;/span>
+              &lt;div id="dismiss-btn" class="dismiss-btn">
+                &lt;i class="bi bi-x">&lt;/i>
+              &lt;/div>
+            &lt;/div>
+        </code>
+      </pre>
+       <h3>Cards with overlay</h3>
         <div class="card">
           <img src="/images/tagore.jpg" alt="images" />
           <div class="overlay">
@@ -411,10 +550,24 @@
           </div>
           <span class="badge primary card-badge">Legend</span>
         </div>
-        <div class="card-overlay-bash">
-          <iframe src="https://carbon.now.sh/embed/j6V5pVT12qKliPLjIxvT" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="card">
+              &lt;img src="/images/tagore.jpg" alt="images" />
+              &lt;div class="overlay">
+                &lt;div>Died on 7th August, 1941&lt;/div>
+              &lt;/div>
+              &lt;div class="card-content">
+                &lt;p>
+                    "Let me not pray to be sheltered from dangers, but to be fearless in facing them.
+                      Let me not beg for the stilling of my pain, but for the heart to conquer it."
+                &lt;/p>
+              &lt;/div>
+              &lt;span class="badge primary card-badge">Legend&lt;/span>
+            &lt;/div>
+        </code>
+      </pre>
         <h3>Text only card</h3>
         <div class="card">
           <header class="header">
@@ -432,10 +585,27 @@
             <i class="bi bi-x"></i>
           </div>
         </div>
-        <div class="card-text-bash">
-          <iframe src="https://carbon.now.sh/embed/ooOaDMHvuGEqmGCcbrYH" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="card">
+              &lt;header class="header">
+                &lt;h1>Card title&lt;/h1>
+                &lt;p>Card subtitle&lt;/p>
+              &lt;/header>
+              &lt;div class="card-content">
+                &lt;p>
+                    "In our desire for eternal life we pray for an eternity of our habit 
+                      and comfort, forgetting that immortality is in repeatedly transcending 
+                      the definite forms of life in order to pursue the infinite truth of life."
+                &lt;/p>
+              &lt;/div>
+              &lt;div id="dismiss-btn" class="dismiss-btn">
+                &lt;i class="bi bi-x">&lt;/i>
+              &lt;/div>
+            &lt;/div>
+        </code>
+      </pre>
         <h3>Horizontal card</h3>
         <div class="card horizontal">
           <div class="card-img-container">
@@ -449,11 +619,25 @@
             </p>
           </div>
         </div>
-        <div class="card-horizontal-bash">
-          <iframe src="https://carbon.now.sh/embed/0USLMcFym2IPWamn2Fe3" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-        <h3>Cards with shadow</h3>
+
+        <pre>
+          <code class="html">
+            &lt;div class="card horizontal">
+              &lt;div class="card-img-container">
+              &lt;img src="/images/tagore.jpg" alt="" />
+            &lt;/div>
+              &lt;div class="card-content">
+                &lt;p>
+                    "Love gives beauty to everything it touches. Not greed and utility;
+                      they produce offices, but not dwelling houses. To be able to love 
+                      material things, to clothe them with tender grace, and yet not be 
+                      attached to them, this is a great service. Providen"
+                &lt;/p>
+              &lt;/div>
+            &lt;/div>
+        </code>
+      </pre>
+       <h3>Cards with shadow</h3>
         <div class="card shadow">
           <img class="card-image" src="/images/tagore.jpg" alt="" />
           <div class="card-content">
@@ -462,27 +646,44 @@
             </p>
           </div>
         </div>
-        <div class="card-shadow-bash">
-          <iframe src="https://carbon.now.sh/embed/yFkyKA9hDBl954oIbGsO" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-      </section>
+
+        <pre>
+          <code class="html">
+            &lt;div class="card shadow">
+              &lt;img class="card-image" src="/images/tagore.jpg" alt="" />
+              &lt;div class="card-content">
+                &lt;p>
+                    "Mistakes live in the neighborhood of truth and therefore delude us."
+                &lt;/p>
+              &lt;/div>
+            &lt;/div>
+        </code>
+      </pre>
+     </section>
 
       <section id="images" class="section">
         <h2>Images</h2>
         <h3>Responsive images</h3>
         <img class="image" src="/images/tagore.jpg" alt="" />
-        <div class="image-responsive-bash">
-          <iframe src="https://carbon.now.sh/embed/Cu3SYVqSkoURPLt7f1KJ" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;div>
+              &lt;img class="image" src="/images/tagore.jpg" alt="" />
+            &lt;/div>
+        </code>
+      </pre>
         <h3>Round images</h3>
         <img class="image round" src="/images/tagore.jpg" alt="" />
-        <div class="image-round-bash">
-          <iframe src="https://carbon.now.sh/embed/3Ljn9Ohp4yMmUFKy5Nsd" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-      </section>
+
+        <pre>
+          <code class="html">
+            &lt;div>
+              &lt;img class="image round" src="/images/tagore.jpg" alt="" />
+            &lt;/div>
+        </code>
+      </pre>
+    </section>
 
       <section id="inputs" class="section">
         <h2>Inputs</h2>
@@ -491,11 +692,16 @@
           <textarea class="textbox"></textarea>
           <label class="placeholder">Comments</label>
         </div>
-        <div class="textbox-bash">
-          <iframe src="https://carbon.now.sh/embed/rVmrntkd93WinvyOlqg1" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-        <h3>Validation Form</h3>
+
+        <pre>
+          <code class="html">
+            &lt;div class="input">
+              &lt;textarea class="textbox">&lt;/textarea>
+            &lt;label class="placeholder">Comments&lt;/label>
+            &lt;/div>
+        </code>
+      </pre>
+       <h3>Validation Form</h3>
         <form id="form" action="" class="form">
           <div class="fname">
             <p>First name</p>
@@ -542,10 +748,57 @@
           </div>
           <button class="btn primary mz" id="submit-btn">Submit form</button>
         </form>
-        <div class="validation-bash">
-          <iframe src="https://carbon.now.sh/embed/3avMF0msX55yoEP8DY7P" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;form id="form" action="" class="form">
+              &lt;div class="fname">
+                &lt;p>First name&lt;/p>
+                    &lt;input type="text" name="First name" id="fname">
+                    &lt;i class="bi bi-check-circle-fill">&lt;/i>
+                    &lt;i class="bi bi-exclamation-circle-fill">&lt;/i>
+              &lt;/div>
+                    &lt;div class="lname">
+                    &lt;p>Last name&lt;/p>
+                    &lt;input type="text" name="Last name" id="lname">
+                    &lt;i class="bi bi-check-circle-fill">&lt;/i>
+                    &lt;i class="bi bi-exclamation-circle-fill">&lt;/i>
+                &lt;/div>
+                &lt;div class="uname">
+                    &lt;p>Username&lt;/p>
+                    &lt;span class="prepend">@&lt;/span>
+                    &lt;input type="text" name="Username" id="uname">
+                    &lt;i class="bi bi-check-circle-fill">&lt;/i>
+                    &lt;i class="bi bi-exclamation-circle-fill">&lt;/i>
+                &lt;/div>
+                &lt;div class="city">
+                &lt;p>City&lt;/p>
+                    &lt;input type="text" name="City" id="city">
+                    &lt;i class="bi bi-check-circle-fill">&lt;/i>
+                    &lt;i class="bi bi-exclamation-circle-fill">&lt;/i>
+                &lt;/div>
+                &lt;div class="state">
+                    &lt;p>State&lt;/p>
+                    &lt;select name="State" id="state">
+                      &lt;option value="">Choose a state&lt;/option>
+                      &lt;option value="Delhi">Delhi&lt;/option>
+                      &lt;option value="Maharastra">Maharastra&lt;/option>
+                      &lt;option value="Tamil Nadu">Tamil Nadu&lt;/option>
+                      &lt;option value="West Bengal">West Bengal&lt;/option>
+                    &lt;/select>
+                    &lt;i class="bi bi-check-circle-fill">&lt;/i>
+                    &lt;i class="bi bi-exclamation-circle-fill">&lt;/i>
+                &lt;/div>
+                &lt;div class="zipcode">
+                  &lt;p>Zipcode&lt;/p>
+                    &lt;input type="number" name="Zipcode" id="zipcode">
+                    &lt;i class="bi bi-check-circle-fill">&lt;/i>
+                    &lt;i class="bi bi-exclamation-circle-fill">&lt;/i>
+                &lt;/div>
+                &lt;input id="submit-btn" type="submit" value="Submit form">
+            &lt;/form>
+        </code>
+      </pre>
       </section>
 
       <section id="lists" class="section">
@@ -576,10 +829,37 @@
             <p>"Truth cannot afford to be tolerant where it faces positive evil."</p>
           </div>
         </div>
-        <div class="list-bash">
-          <iframe src="https://carbon.now.sh/embed/j2uElam0wBdPS1LLdDhh" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="list-item-container">
+              &lt;div class="list-item">
+                &lt;div class="list-avatar">
+                  &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+                &lt;/div>
+                &lt;p>"Those who own much have much to fear"&lt;/p>
+              &lt;/div>
+              &lt;div class="list-item">
+                &lt;div class="list-avatar">
+                  &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+                &lt;/div>
+                &lt;p>"Faith is the bird that feels the light when the dawn is still dark."&lt;/p>
+              &lt;/div>
+              &lt;div class="list-item">
+                &lt;div class="list-avatar">
+                  &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+                &lt;/div>
+                &lt;p>"The fundamental desire of life is the desire to exist."&lt;/p>
+              &lt;/div>
+              &lt;div class="list-item">
+                &lt;div class="list-avatar">
+                  &lt;img class="image round" src="/images/tagore.jpg" alt="avatar image" />
+                &lt;/div>
+                &lt;p>"Truth cannot afford to be tolerant where it faces positive evil."&lt;/p>
+              &lt;/div>
+            &lt;/div>
+        </code>
+      </pre>
       </section>
 
       <section id="navigation" class="section">
@@ -621,11 +901,52 @@
           <div class="nav-right">
             <button id="nav-toggle"><i class="bi bi-list"></i></button>
         </nav>
-        <div class="navigation-bash">
-          <iframe src="https://carbon.now.sh/embed/tMgSgAz2Hvtnxv2ubHjL" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-      </section>
+
+        <pre>
+          <code class="html">
+            &lt;nav class="navbar">
+              &lt;div class="nav-left">
+                &lt;div class="nav-brand">
+                  &lt;h1>
+                    &lt;a class="brand-logo" href="">Navbar&lt;/a>
+                  &lt;/h1>
+                &lt;/div>
+                &lt;div id="nav-pills-mobile">
+                  &lt;ul class="nav-links-mobile">
+                    &lt;li class="link">
+                      &lt;a href="">Home&lt;/a>
+                    &lt;/li>
+                    &lt;li class="link">
+                      &lt;a href="">Docs&lt;/a>
+                    &lt;/li>
+                    &lt;li class="link">
+                      &lt;a href="">Features&lt;/a>
+                    &lt;/li>
+                  &lt;/ul>
+                &lt;/div>
+                &lt;div id="nav-pills-desktop">
+                  &lt;ul class="nav-links-desktop">
+                    &lt;li class="link">
+                      &lt;a href="">Home&lt;/a>
+                    &lt;/li>
+                    &lt;li class="link">
+                      &lt;a href="">Docs&lt;/a>
+                    &lt;/li>
+                    &lt;li class="link">
+                      &lt;a href="">Features&lt;/a>
+                    &lt;/li>
+                  &lt;/ul>
+                &lt;/div>
+              &lt;/div>
+              &lt;div class="nav-right">
+                &lt;button id="nav-toggle">
+                      &lt;i class="bi bi-list">&lt;/i>
+                    &lt;/button>
+                &lt;/div>
+            &lt;/nav>
+        </code>
+      </pre>
+     </section>
 
       <section id="modal" class="section">
         <h2>Modal</h2>
@@ -644,10 +965,26 @@
             <button class="modal-save">Save changes</button>
           </footer>
         </div>
-        <div class="modal-bash">
-          <iframe src="https://carbon.now.sh/embed/LmqfF7fASaanfDi5hcPY" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;button id="btn-show-modal" class="btn primary">Show Demo Modal&lt;/button>
+            &lt;div id="overlay" class="modal-overlay">&lt;/div>
+              &lt;div id="modal-container" class="modal">
+                &lt;header class="modal-header">
+                  &lt;p>Modal title&lt;/p>
+                  &lt;div id="modal-close" class="modal-close">
+                    &lt;i class="bi bi-x">&lt;/i>
+                  &lt;/div>
+                &lt;/header>
+              &lt;p class="modal-text">This is a centered modal.&lt;/p>
+              &lt;footer class="modal-footer">
+                &lt;button id="modal-hide" class="modal-hide">Close&lt;/button>
+                &lt;button class="modal-save">Save changes&lt;/button>
+              &lt;/footer>
+            &lt;/div>
+        </code>
+      </pre>
       </section>
 
       <section id="rating" class="section">
@@ -673,10 +1010,30 @@
             <i class="bi bi-star-fill"></i>
           </div>
         </div>
-        <div class="ratings-bash">
-          <iframe src="https://carbon.now.sh/embed/c4ipkjWOokOF07vwJ8Gm" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="star">
+              &lt;i class="bi bi-star-fill">&lt;/i>
+                &lt;i class="bi bi-star-fill">&lt;/i>
+                &lt;i class="bi bi-star-fill">&lt;/i>
+                &lt;i class="bi bi-star">&lt;/i>
+                &lt;i class="bi bi-star">&lt;/i>
+            &lt;/div>
+            &lt;div class="star-num rating-h">
+              &lt;span>4.4&lt;/span>
+              &lt;i class="bi bi-star-fill">&lt;/i>
+            &lt;/div>
+            &lt;div class="star-num rating-m">
+              &lt;span>2.5&lt;/span>
+              &lt;i class="bi bi-star-fill">&lt;/i>
+            &lt;/div>
+            &lt;div class="star-num rating-l">
+              &lt;span>1.7&lt;/span>
+              &lt;i class="bi bi-star-fill">&lt;/i>
+            &lt;/div>
+        </code>
+      </pre>
       </section>
 
       <section id="grid" class="section">
@@ -686,18 +1043,49 @@
           <div class="column1">Item1</div>
           <div class="column2">Item2</div>
         </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="grid-2">
+              &lt;div class="column1">Item1&lt;/div>
+              &lt;div class="column2">Item2&lt;/div>
+            &lt;/div>
+        </code>
+      </pre>
+
         <h3>Grid 3: Three items in a grid</h3>
         <div class="grid3">
           <div class="column1">Item1</div>
           <div class="column2">Item2</div>
           <div class="column3">Item3</div>
         </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="grid3">
+              &lt;div class="column1">Item1&lt;/div>
+              &lt;div class="column2">Item2&lt;/div>
+              &lt;div class="column3">Item3&lt;/div>
+            &lt;/div>
+        </code>
+      </pre>
+
         <h3>OR</h3>
         <div class="grid3 row">
           <div class="row1">Item1</div>
           <div class="column-f">Item2</div>
           <div class="column-s">Item3</div>
         </div>
+
+        <pre>
+          <code class="html">
+            &lt;div class="grid3 row">
+              &lt;div class="row1">Item1&lt;/div>
+              &lt;div class="column-f">Item2&lt;/div>
+              &lt;div class="column-s">Item3&lt;/div>
+            &lt;/div>
+        </code>
+      </pre>
       </section>
 
       <section id="typography" class="section">
@@ -715,11 +1103,19 @@
           <p style="text-align: center;">This is a centered text</p>
         </div>
 
-
-        <div class="text-bash">
-          <iframe src="https://carbon.now.sh/embed/BlpRJY3MMWzUV5eFasNW" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+        <pre>
+          <code class="html">
+            &lt;h1>This is heading 1&lt;/h1>
+            &lt;h2>This is heading 2&lt;/h2>
+            &lt;h3>This is heading 3&lt;/h3>
+            &lt;h4>This is heading 4&lt;/h4>
+            &lt;h5>This is heading 5&lt;/h5>
+            &lt;h6>This is heading 6&lt;/h6>
+            &lt;small>This is a small text&lt;/small>
+            &lt;p style="color: var(--rb-grey);">This is a gray text&lt;/p>
+            &lt;p style="text-align: center;">This is a centered text&lt;/p>
+        </code>
+      </pre>
       </section>
 
       <section id="toast" class="section">
@@ -729,10 +1125,15 @@
           <p>You have not reached the end of the page.</p>
           <p>"The end is the beginning and the beginning is the end "</p>
         </div>
-        <div class="toast-bash">
-          <iframe src="https://carbon.now.sh/embed/nbAxcTdTIuy94FahPGra" sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+
+        <pre>
+          <code class="html">
+            &lt;div id="toast-contents" class="toast">
+              &lt;p>You have not reached the end of the page.&lt;/p>
+              &lt;p>"The end is the beginning and the beginning is the end "&lt;/p>
+            &lt;/div>
+        </code>
+      </pre>
       </section>
     </div>
 
@@ -758,6 +1159,8 @@
     </div>
   </div>
   </div>
+  <script src="/highlight/highlight.pack.js"></script>
+  <script>hljs.highlightAll();</script>
   <script src="/js/rabiui.js"></script>
 </body>
 
