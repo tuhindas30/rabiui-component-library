@@ -1,0 +1,185 @@
+.input {
+  position: relative;
+}
+.textbox {
+  width: 100%;
+  height: 20vh;
+  padding: 2rem 1rem;
+  font-size: 1.1rem;
+  border: 0.1rem solid var(--rb-grey);
+}
+
+.textbox:focus {
+  outline: none;
+  border: 0.1rem solid var(--rb-primary);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-primary);
+}
+
+.placeholder {
+  position: absolute;
+  top: 1rem;
+  left: 1.1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  color: var(--rb-light-black);
+  transition: 0.2s;
+}
+
+.textbox:focus + .placeholder {
+  top: -1px;
+  font-size: 1rem;
+}
+
+.form {
+  padding: 2rem;
+  border: 1px solid var(--rb-grey);
+  border-radius: 0.6rem;
+}
+
+.form p {
+  padding: 0.5rem 0;
+}
+
+.form input,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  border: 0.1rem solid var(--rb-grey);
+  border-radius: 0.3rem;
+}
+
+.fname,
+.lname,
+.uname,
+.city,
+.state,
+.zipcode {
+  position: relative;
+}
+
+.fname i,
+.lname i,
+.uname i,
+.city i,
+.zipcode i {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+}
+
+.state i {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+}
+
+.uname input {
+  padding: 0.5rem 3rem;
+}
+
+.prepend {
+  position: absolute;
+  top: 2.8rem;
+  left: 1.1px;
+  padding: 0.5rem 0.7rem;
+  background-color: var(--rb-grey);
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.form input:focus,
+select:focus {
+  outline: none;
+  border: 0.1rem solid var(--rb-primary);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-primary);
+}
+
+.form input[type="submit"] {
+  cursor: pointer;
+  width: 50%;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background-color: var(--rb-primary);
+  color: var(--rb-very-light-grey);
+  border: 0.1rem solid var(--rb-primary);
+  border-radius: 0.3rem;
+}
+
+.form input[type="submit"]:hover {
+  opacity: 1;
+}
+
+.form input[type="submit"]:active {
+  border-color: var(--rb-primary);
+}
+
+.form i {
+  visibility: hidden;
+}
+
+.fname.success i.bi-check-circle-fill,
+.lname.success i.bi-check-circle-fill,
+.uname.success i.bi-check-circle-fill,
+.city.success i.bi-check-circle-fill,
+.state.success i.bi-check-circle-fill,
+.zipcode.success i.bi-check-circle-fill {
+  visibility: visible;
+  color: var(--rb-green);
+}
+
+.fname.error i.bi-exclamation-circle-fill,
+.lname.error i.bi-exclamation-circle-fill,
+.uname.error i.bi-exclamation-circle-fill,
+.city.error i.bi-exclamation-circle-fill,
+.state.error i.bi-exclamation-circle-fill,
+.zipcode.error i.bi-exclamation-circle-fill {
+  visibility: visible;
+  color: var(--rb-red);
+}
+
+.fname.success input,
+.lname.success input,
+.uname.success input,
+.city.success input,
+.state.success select,
+.zipcode.success input {
+  border: 0.1rem solid var(--rb-green);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-green);
+}
+
+.fname.error input,
+.lname.error input,
+.uname.error input,
+.city.error input,
+.state.error select,
+.zipcode.error input {
+  border: 0.1rem solid var(--rb-red);
+  box-shadow: 0 0 0.5rem 0.1rem var(--rb-red);
+}
+
+.btn.primary.mz {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .prepend {
+    top: 2.8rem;
+  }
+
+  .fname i,
+  .lname i,
+  .uname i,
+  .city i,
+  .zipcode i {
+    top: 3.2rem;
+    right: 1rem;
+  }
+
+  .state i {
+    position: absolute;
+    top: 3.2rem;
+    right: 2rem;
+  }
+}

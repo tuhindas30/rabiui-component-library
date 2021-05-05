@@ -1,0 +1,29 @@
+.xsm {
+  position: relative;
+  width: 10%;
+  height: 10%;
+}
+
+.sm {
+  position: relative;
+  width: 15%;
+  height: 15%;
+}
+
+.md {
+  position: relative;
+  width: 20%;
+  height: 20%;
+}
+
+.lg {
+  position: relative;
+  width: 25%;
+  height: 25%;
+}
+
+.xlg {
+  position: relative;
+  width: 30%;
+  height: 30%;
+}

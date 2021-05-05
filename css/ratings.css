@@ -1,0 +1,31 @@
+.ratings-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+
+.star i.bi-star-fill {
+  color: var(--rb-primary);
+}
+
+.star-num {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 0.3rem;
+}
+
+.rating-h {
+  background-color: var(--rb-dark-green);
+  color: var(--rb-very-light-grey);
+}
+
+.rating-m {
+  background-color: var(--rb-yellow);
+  color: var(--rb-very-light-grey);
+}
+
+.rating-l {
+  background-color: var(--rb-light-red);
+  color: var(--rb-very-light-grey);
+}
