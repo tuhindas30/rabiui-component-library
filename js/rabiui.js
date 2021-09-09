@@ -12,12 +12,6 @@ navToggle.addEventListener("click", () => {
   }
 });
 
-// Prevent search reload
-
-const searchForm = document.getElementById("search-form");
-
-searchForm.addEventListener("submit", (e) => e.preventDefault());
-
 // Alert Close Button
 
 const closeBtn = document.getElementById("close");
