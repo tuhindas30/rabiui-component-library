@@ -340,13 +340,6 @@ body {
 
   /* Navbar Right */
 
-  .nav-right {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-basis: 40%;
-  }
-
   .search-desktop {
     display: block;
     width: 100%;
